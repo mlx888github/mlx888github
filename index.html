@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Nations Australia - A Historical Overview</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 4rem; /* Space for the marker and line */
+            margin-bottom: 2.5rem;
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        .timeline-marker {
+            position: absolute;
+            top: 0.5rem;
+            left: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background-color: #6b7280; /* Gray-500 */
+            border: 0.25rem solid #f3f4f6; /* Gray-100 */
+            z-index: 1;
+        }
+        .timeline-line {
+            position: absolute;
+            top: 0;
+            left: 0.75rem; /* Centered with the marker */
+            height: 100%;
+            width: 0.25rem; /* Thickness of the line */
+            background-color: #d1d5db; /* Gray-300 */
+            z-index: 0;
+        }
+        .timeline-content {
+            background-color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-title {
+            font-size: 1.25rem;
+            font-weight: 600; /* Semibold */
+            color: #1f2937; /* Gray-800 */
+            margin-bottom: 0.5rem;
+        }
+        .timeline-text {
+            font-size: 1rem;
+            color: #4b5563; /* Gray-600 */
+            line-height: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .timeline-item {
+                padding-left: 2.5rem;
+            }
+            .timeline-marker {
+                width: 1rem;
+                height: 1rem;
+                top: 0.25rem;
+                left: 0;
+            }
+            .timeline-line {
+                left: 0.5rem;
+            }
+            .timeline-title {
+                font-size: 1rem;
+            }
+            .timeline-text {
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-10">
+        <h1 class="text-3xl font-semibold text-gray-800 text-center mb-8">First Nations Australia - A Historical Overview</h1>
+        <div class="timeline relative">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">65,000+ Years Ago</h2>
+                    <p class="timeline-text">
+                        The First Peoples of Australia arrive, developing diverse cultures and languages across the continent.  They establish complex societies, sustainable land management practices, and rich spiritual traditions.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">1788</h2>
+                    <p class="timeline-text">
+                        British colonization begins with the arrival of the First Fleet in Sydney.  This marks the start of a long period of dispossession, conflict, and the introduction of diseases that devastate First Nations communities.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">1901</h2>
+                    <p class="timeline-text">
+                       The Commonwealth of Australia is established.  The Australian Constitution excludes Aboriginal people from being counted in the census and allows laws to be made that discriminate against them.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">1930s - 1970s</h2>
+                    <p class="timeline-text">
+                        The Stolen Generations.  Government policies lead to the forced removal of many Aboriginal children from their families, causing lasting trauma and cultural disruption.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">1967</h2>
+                    <p class="timeline-text">
+                        A landmark referendum sees over 90% of Australians vote to amend the Constitution to include Aboriginal people in the census and give the Commonwealth Parliament the power to legislate for Aboriginal people.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">1970s - Present</h2>
+                    <p class="timeline-text">
+                        Land rights movements gain momentum, leading to the recognition of Aboriginal land ownership in some areas.  Continued efforts towards reconciliation, self-determination, and addressing ongoing social and economic inequalities.
+                    </p>
+                </div>
+            </div>
+             <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">2008</h2>
+                    <p class="timeline-text">
+                       Prime Minister Kevin Rudd delivers a formal Apology to the Stolen Generations on behalf of the Australian Government.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <h2 class="timeline-title">2023</h2>
+                    <p class="timeline-text">
+                        A referendum on a proposed Indigenous Voice to Parliament is held. The proposal is not accepted.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-12 text-center text-gray-500 text-sm">
+            <p>This infographic provides a brief overview of First Nations Australian history.  Further research is encouraged for a deeper understanding.</p>
+        </footer>
+    </div>
+</body>
+</html>
